@@ -17,14 +17,14 @@ function App() {
     <div>
       <div className="flex flex-col">
         <NavBar />
-        <div className="">
+        <div className="relative">
           <SideBar />
           <Content />
         </div>
       </div>
       {movieModalEnabled && (
         <div
-          className="fixed top-20 bottom-50 left-0 bg-black 
+          className="absolute top-0
            w-full h-full flex items-center justify-center bg-opacity-50 z-50"
           onClick={(event) =>
             event.currentTarget === event.target && dispatch(hide())

@@ -17,7 +17,7 @@ export default function SideBar() {
   return (
     <div
       className="bg-slate-800 text-neutral-100 p-2 pr-0 h-auto
-     drop-shadow-lg "
+     drop-shadow-lg flex justify-center"
     >
       <ul className="text-sm cursor-pointer space-y-0.5 flex flex-wrap w-6/12 justify-center">
         {genres}

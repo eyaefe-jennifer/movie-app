@@ -49,7 +49,7 @@ const MovieModal = () => {
       );
     });
     API.get(`/movie/${movieId}/watch/providers`).then((response) => {
-      const data = response.data.results.US.flatrate.slice(0, 5);
+      const data = response.data?.results?.US?.flatrate.slice(0, 5);
       setWatchProviders(
         data.map((movieProvider) => (
           <MovieProvider
